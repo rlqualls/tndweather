@@ -22,7 +22,7 @@ dependencies:
 
 tested: python2.7.4, python3.3
 
-usage: tndweather.py <city> [country] [flags]
+usage: tndweather.py -c <city> [-C <country>] [flags]
 '''
 
 DEFAULT_COUNTRY = "usa"
