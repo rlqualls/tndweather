@@ -37,13 +37,13 @@ parser.add_argument('-H', '--humidity', action='store_true', help='output humidi
 parser.add_argument('-v', '--visibility', action='store_true', help='output visibility')
 args = parser.parse_args()
 
-city = getattr(args, 'city')
-country = getattr(args, 'country')
-t_flag = getattr(args, 'temp')
-l_flag = getattr(args, 'location')
-p_flag = getattr(args, 'pressure')
-h_flag = getattr(args, 'humidity')
-v_flag = getattr(args, 'visibility')
+city = args.city
+country = args.country
+t_flag = args.temp
+l_flag = args.location
+p_flag = args.pressure
+h_flag = args.humidity
+v_flag = args.visibility
   
 #scrape section
 if city:
