@@ -1,9 +1,4 @@
-#!/usr/bin/python
-import sys
-import re
-import requests
-import argparse
-from bs4 import BeautifulSoup
+#!/usr/bin/env python
 
 '''
 Title: tndweather
@@ -24,7 +19,15 @@ tested: python2.7.4, python3.3
 usage: tndweather.py -c <city> [-C <country>] [flags]
 '''
 
+import sys
+import re
+import requests
+import argparse
+from bs4 import BeautifulSoup
+
+
 DEFAULT_COUNTRY = "usa"
+BASE_URL = "http://www.timeanddate.com/weather/"
 
 #command line options
 parser = argparse.ArgumentParser(prog='parser')
@@ -48,7 +51,7 @@ v_flag = args.visibility
 #scrape section
 if city:
   #--city mode--
-  r = requests.get("http://www.timeanddate.com/weather/" + country + "/" + city)
+  r = requests.get(BASE_URL + country + "/" + city)
   soup = BeautifulSoup(r.text)
   if soup.select(".rpad") == []:
     print("Your city did not return any results")
@@ -89,7 +92,7 @@ if city:
     print("Last Update: " + last_update)
 else:
   #--country mode--
-  r = requests.get("http://www.timeanddate.com/weather/" + country)
+  r = requests.get(BASE_URL + country)
   soup = BeautifulSoup(r.text)
   cities = soup.find_all("a", href=re.compile("weather/" + country))
   del cities[0]
