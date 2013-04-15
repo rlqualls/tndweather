@@ -8,7 +8,6 @@ from bs4 import BeautifulSoup
 '''
 Title: tndweather
 Author: Robert Qualls<rlqualls@una.edu>
-Year: 2013
 
 This is my first web scraping mini project.  It pulls the weather
 for a city from www.timeanddate.com and prints it to STDOUT. If no 
@@ -17,8 +16,8 @@ list of cities in that country are printed out, along with their local
 times and conditions.
 
 dependencies: 
-  requests : python-requests.org 
-  beautifulsoup4 : crummy.com/software/BeautifulSoup
+  requests (1.2.0) : python-requests.org  
+  beautifulsoup4 (4.1.3) : crummy.com/software/BeautifulSoup
 
 tested: python2.7.4, python3.3
 
