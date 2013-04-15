@@ -65,7 +65,7 @@ if city:
   pressure = table[9].text
   humidity = table[11].text
   visibility = table[13].text
-  last_update = table[17].text
+  last_update = table[17].text if 17 < len(table) else 'N/A'
 
   #city output
   if (t_flag):
@@ -95,7 +95,7 @@ else:
   r = requests.get(BASE_URL + country)
   soup = BeautifulSoup(r.text)
   cities = soup.find_all("a", href=re.compile("weather/" + country))
-  del cities[0]
+  del cities[0] # remove header because it isn't a city
   conditions = soup.select('.r')
   temps = soup.select('.rbi')
   for i in range(0, len(cities)):
