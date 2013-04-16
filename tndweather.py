@@ -21,9 +21,22 @@ usage: tndweather.py -c <city> [-C <country>] [flags]
 
 import sys
 import re
-import requests
 import argparse
-from bs4 import BeautifulSoup
+
+#import 3rd party dependencies
+try:
+  import requests
+except ImportError:
+  print("The requests package is not installed.")
+  print("If you have pip, it can be installed with 'pip install requests'")
+  exit(1)
+
+try:
+  from bs4 import BeautifulSoup
+except ImportError:
+  print("The beautifulsoup4 package is not installed.")
+  print("If you have pip, it can be installed with 'pip install beautifulsoup4'")
+  exit(1)
 
 
 DEFAULT_COUNTRY = "usa"
