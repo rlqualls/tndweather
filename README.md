@@ -6,18 +6,17 @@ It can be used for general info, widget data, or entertainment if you are weird.
 
 ## usage: 
 
-[python/python2] tndweather.py [-c <city>] [-C <country>] [-tlhv]
+### [python/python2] tndweather.py [-c <city>] [-C <country>] [-tlhv]
 
 if no country is specified, 'Murica is used.
 
 example: 
 
-tndweather.py -c pensacola
+### tndweather.py -c pensacola
 
 output: 
 
 Weather for pensacola:
-----------
 
 Location   : Pensacola Regional Airport
 Conditions : Sunny. Warm.
@@ -33,7 +32,9 @@ if no city is specified, a list of cities and their conditions is output.
 
 example 2:
 
-tndweather.py -C france
+### tndweather.py -C france
+
+output:
 
 Aix-en-Provence: Tue 11:52 PM Clear. Cool. 57 °F
 Le Havre: Tue 11:52 PM 55 °F
@@ -86,9 +87,9 @@ Villeurbanne: Tue 11:52 PM 64 °F
 
 For a city, there are flags to output only particular data.
 
-exampple 3:
+example 3:
 
-tndweather.py -c brasilia -C brazil -t 
+## tndweather.py -c brasilia -C brazil -t 
 75 °F
 
 # BUGS
