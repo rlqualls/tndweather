@@ -4,6 +4,15 @@ TNDWEATHER.py
 tndweather.py is a weather scraping tool that pulls data from timeanddate.com.
 It can be used for general info, widget data, or entertainment if you are weird.
 
+### requirements:
+
+1. python 2.7.4 / python 3.3 (others probably work but are untested)
+2. requests 1.2.0 - HTTP request library
+3. beautifulsoup4 4.1.3 - HTML parser
+
+    pip install requests
+    pip install beautifulsoup4
+
 ### usage: 
 
     [python/python2] tndweather.py [-c <city>] [-C <country>] [-tlhv]
