@@ -4,26 +4,26 @@ TNDWEATHER.py
 tndweather.py is a weather scraping tool that pulls data from timeanddate.com.
 It can be used for general info, widget data, or entertainment if you are weird.
 
-### requirements:
+### requirements:  
 
-1. python 2.7.4 / python 3.3 (others probably work but are untested)
-2. requests 1.2.0 - HTTP request library
-3. beautifulsoup4 4.1.3 - HTML parser
+1. python 2.7.4 / python 3.3 (others probably work but are untested)  
+2. requests 1.2.0 - HTTP request library  
+3. beautifulsoup4 4.1.3 - HTML parser  
 
-    pip install requests
-    pip install beautifulsoup4
+    pip install requests  
+    pip install beautifulsoup4  
 
-### usage: 
+### usage:   
 
-    [python/python2] tndweather.py [-c <city>] [-C <country>] [-tlhv]
+    [python/python2] tndweather.py [-c <city>] [-C <country>] [-tlhv]  
 
-if no country is specified, 'Murica is used.
+if no country is specified, 'Murica is used.  
 
-    tndweather.py -c pensacola
+    tndweather.py -c pensacola  
 
-outputs something like: 
+outputs something like:  
 
-    Weather for pensacola:
+    Weather for pensacola:  
 
     Location   : Pensacola Regional Airport  
     Conditions : Sunny. Warm.  
