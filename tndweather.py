@@ -2,7 +2,7 @@
 
 '''
 Title: tndweather
-Author: Robert Qualls<rlqualls@una.edu>
+Author: Robert Qualls<robert@robertqualls.com>
 
 This is my first web scraping mini project.  It pulls the weather
 for a city from www.timeanddate.com and prints it to STDOUT. If no 
